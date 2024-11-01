@@ -15,13 +15,13 @@ export default function Home() {
   const [foodTypeIndex, setFoodTypeIndex] = useState(0)
 
   const foodTypes = [
-	  { name: 'Corn', icon: '🌽' , coef: 0.8},
-	  { name: 'Grass', icon: '🌱', coef:  0.9},
-	  { name: 'Hay', icon: '🌾', coef: 0.7 }
+	  { name: 'Corn', icon: '🌽' , coef: 0.5},
+	  { name: 'Grass', icon: '🌱', coef:  0.4},
+	  { name: 'Hay', icon: '🌾', coef: 0.3 }
   ]
   
   const calculateMethane = () => {
-    return (cowCount * 1000 * foodTypes[foodTypeIndex].coef) ** 2
+    return (cowCount * foodTypes[foodTypeIndex].coef)
   }
 
   const nextFoodType = () => {
@@ -50,7 +50,7 @@ export default function Home() {
         <div className="flex justify-center mb-8">
           <div className="text-center">
             <div className="text-6xl mb-4">🐮</div>
-            <div className="text-xl flex items-center justify-center">
+            <div className="text-xl flex items-center justify-center font-bold">
               Cow Count: 
               <input
                 type="text"
@@ -72,7 +72,7 @@ export default function Home() {
           
           <div className="text-center">
             <div className="text-4xl mb-2">{foodTypes[foodTypeIndex].icon}</div>
-			  <div className="text-xl">Food Type: {foodTypes[foodTypeIndex].name}</div>
+			  <div className="text-xl font-bold">Food Type: {foodTypes[foodTypeIndex].name}</div>
           </div>
 
           <button
@@ -83,9 +83,9 @@ export default function Home() {
           </button>
         </div>
 
-        <div className="text-xl">
-          Methane Produced = {calculateMethane().toLocaleString()}²* (tons² / day)<br/>
-		  This number will be tuned based on research.
+        <div className="text-xl font-bold">
+          Methane Produced = {calculateMethane().toLocaleString()}³* (cubic meters³ / day)<br/>
+		  This number will be tuned based on further research.
         </div>
       </div>
     </div>

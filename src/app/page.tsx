@@ -81,9 +81,13 @@ export default function Home() {
 
         <div className="text-xl font-bold">
           Methane Produced = {calculateMethane().toLocaleString()}³* (cubic meters³ / day)<br/>
-		  This number will be tuned based on further research.
+		  *This number will be tuned based on further research.
         </div>
       </div>
+
+	<div>
+		<h1 className="text-xl">Feedback Form: </h1>
+	</div>
     </div>
   );
 }

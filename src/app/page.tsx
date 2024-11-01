@@ -62,6 +62,8 @@ export default function Home() {
           </div>
         </div>
 
+
+
         <div className="flex items-center justify-center gap-4 mb-12">
           <button
             onClick={prevFoodType}

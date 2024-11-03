@@ -38,7 +38,7 @@ export default function Home() {
     };
 
     return (
-        <div className="min-h-screen bg-[#98FB98] flex items-center justify-center">
+        <div className="min-h-screen bg-[#5fb75f] flex items-center justify-center">
             <div className="text-center text-white p-8">
                 <h1 className="text-5xl font-bold mb-12">Cowculator</h1>
 

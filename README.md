@@ -1,5 +1,8 @@
 # Cowculator - v1
+
 :cow: Calculate the enteric methane emissions from cows based on their food
+
+🥇 **1st Place Winner** of UC Davis Climate Pitch Competition
 
 ![image](https://github.com/user-attachments/assets/fe617daf-f5dd-4218-a1cf-2b886d155bf6)
 
